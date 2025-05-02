@@ -1,13 +1,13 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Bread, Cake, Cookie } from "lucide-react";
+import { Croissant, Cake, Cookie } from "lucide-react";
 
 const products = [
   {
     id: 1,
     name: "לחמים מחמצת",
     description: "לחמי מחמצת אותנטיים עם טעם עשיר וקראסט פריך",
-    icon: Bread
+    icon: Croissant
   },
   {
     id: 2,
