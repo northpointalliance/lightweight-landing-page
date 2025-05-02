@@ -64,11 +64,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				bakery: {
-					'brown': '#8B5A2B',
-					'tan': '#D2B48C',
-					'cream': '#FFFDD0',
-					'warm': '#FEC6A1',
-					'accent': '#ea384c',
+					'brown': '#5F4B32',
+					'tan': '#E6CCAB',
+					'cream': '#FFF8E7',
+					'warm': '#F2D0A4',
+					'accent': '#C75D36',
 				}
 			},
 			fontFamily: {
