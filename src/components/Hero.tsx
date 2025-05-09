@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Image } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -23,6 +24,13 @@ const Hero = () => {
             
             <Button variant="outline" className="border-bakery-brown text-bakery-brown hover:bg-bakery-tan/50 hebrew shadow-sm">
               המוצרים שלנו
+            </Button>
+
+            <Button variant="ghost" className="text-bakery-brown hover:bg-bakery-tan/30 hebrew shadow-sm" asChild>
+              <Link to="/images">
+                <Image className="h-5 w-5 ml-1" />
+                <span>ניהול תמונות</span>
+              </Link>
             </Button>
           </div>
         </div>
