@@ -2,6 +2,11 @@
 import { Instagram, Facebook } from "lucide-react";
 
 const Footer = () => {
+  const handleFacebookShare = () => {
+    const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`;
+    window.open(shareUrl, "facebook-share", "width=580,height=296");
+  };
+
   return (
     <footer className="bg-gradient-to-r from-bakery-accent/90 to-bakery-brown text-white py-8">
       <div className="container mx-auto px-4">
@@ -12,9 +17,13 @@ const Footer = () => {
           </div>
           
           <div className="flex space-x-4 items-center">
-            <a href="#" className="text-white hover:text-bakery-warm transition-colors">
+            <button 
+              onClick={handleFacebookShare} 
+              className="text-white hover:text-bakery-warm transition-colors"
+              aria-label="Share on Facebook"
+            >
               <Facebook className="h-5 w-5" />
-            </a>
+            </button>
             <a href="#" className="text-white hover:text-bakery-warm transition-colors">
               <Instagram className="h-5 w-5" />
             </a>

@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Image } from "lucide-react";
 import { Link } from "react-router-dom";
+import FacebookShare from "./FacebookShare";
 
 const Hero = () => {
   return (
@@ -16,7 +17,7 @@ const Hero = () => {
             אנו אופים מדי יום לחמים, מאפים ומתוקים מהחומרים האיכותיים ביותר, לפי מתכונים משפחתיים מסורתיים
           </p>
           
-          <div className="mt-8 space-x-4 space-x-reverse flex">
+          <div className="mt-8 space-x-4 space-x-reverse flex flex-wrap gap-y-2">
             <Button className="bg-bakery-accent hover:bg-bakery-accent/90 text-white hebrew flex items-center gap-2 shadow-md">
               <ArrowLeft className="h-5 w-5" />
               <span>בקרו אותנו</span>
@@ -32,6 +33,8 @@ const Hero = () => {
                 <span>ניהול תמונות</span>
               </Link>
             </Button>
+            
+            <FacebookShare quote="מאפייה משפחתית עם טעם של בית - לחם טוב" />
           </div>
         </div>
       </div>
