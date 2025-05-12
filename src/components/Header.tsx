@@ -7,7 +7,7 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-sm">
+    <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
@@ -17,7 +17,11 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8 flex-row-reverse">
             <a href="#about" className="text-bakery-brown hover:text-bakery-accent font-medium transition-colors hebrew">אודות</a>
-            <a href="#products" className="text-bakery-brown hover:text-bakery-accent font-medium transition-colors hebrew">המוצרים שלנו</a>
+            <a href="#services" className="text-bakery-brown hover:text-bakery-accent font-medium transition-colors hebrew">המוצרים שלנו</a>
+            <a href="#process" className="text-bakery-brown hover:text-bakery-accent font-medium transition-colors hebrew">תהליך</a>
+            <a href="#testimonials" className="text-bakery-brown hover:text-bakery-accent font-medium transition-colors hebrew">המלצות</a>
+            <a href="#facebook" className="text-bakery-brown hover:text-bakery-accent font-medium transition-colors hebrew">פייסבוק</a>
+            <a href="#faq" className="text-bakery-brown hover:text-bakery-accent font-medium transition-colors hebrew">שאלות נפוצות</a>
             <a href="#contact" className="text-bakery-brown hover:text-bakery-accent font-medium transition-colors hebrew">צור קשר</a>
           </nav>
           
@@ -38,7 +42,11 @@ const Header = () => {
         {mobileMenuOpen && (
           <nav className="md:hidden pt-4 pb-2 flex flex-col space-y-3 items-end">
             <a href="#about" className="text-bakery-brown hover:text-bakery-accent font-medium hebrew">אודות</a>
-            <a href="#products" className="text-bakery-brown hover:text-bakery-accent font-medium hebrew">המוצרים שלנו</a>
+            <a href="#services" className="text-bakery-brown hover:text-bakery-accent font-medium hebrew">המוצרים שלנו</a>
+            <a href="#process" className="text-bakery-brown hover:text-bakery-accent font-medium hebrew">תהליך</a>
+            <a href="#testimonials" className="text-bakery-brown hover:text-bakery-accent font-medium hebrew">המלצות</a>
+            <a href="#facebook" className="text-bakery-brown hover:text-bakery-accent font-medium hebrew">פייסבוק</a>
+            <a href="#faq" className="text-bakery-brown hover:text-bakery-accent font-medium hebrew">שאלות נפוצות</a>
             <a href="#contact" className="text-bakery-brown hover:text-bakery-accent font-medium hebrew">צור קשר</a>
           </nav>
         )}
