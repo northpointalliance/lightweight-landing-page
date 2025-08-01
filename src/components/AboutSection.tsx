@@ -3,35 +3,38 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-16 md:py-24 bg-secondary">
+    <section id="about" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="aspect-video bg-muted rounded-lg flex items-center justify-center border-2 border-dashed border-border">
-            <div className="text-center">
-              <div className="text-4xl mb-2">🏠</div>
-              <p className="text-muted-foreground hebrew">תמונת המשפחה</p>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-bakery-brown hebrew-title">הסיפור שלנו</h2>
+          <div className="mt-2 w-24 h-1 bg-bakery-accent mx-auto"></div>
+        </div>
+        
+        <div className="flex flex-col md:flex-row gap-8 items-center">
+          <div className="md:w-1/2">
+            <div className="relative">
+              <div className="absolute inset-0 bg-bakery-accent rounded-lg transform rotate-3 translate-x-2 translate-y-2 opacity-80"></div>
+              <Card className="relative overflow-hidden shadow-lg border-0">
+                <CardContent className="p-0">
+                  <div className="aspect-video bg-gradient-to-br from-bakery-tan to-bakery-warm flex items-center justify-center">
+                    <p className="italic text-bakery-brown font-medium">תמונת המאפייה המשפחתית</p>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
           
-          <div className="text-right">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground hebrew-title mb-6">אודותינו</h2>
-            <p className="mb-4 hebrew text-muted-foreground leading-relaxed">
+          <div className="md:w-1/2 text-right">
+            <h3 className="text-2xl font-semibold text-bakery-brown mb-4 hebrew-title">מאפייה משפחתית מאז 1982</h3>
+            <p className="mb-4 hebrew text-bakery-brown/80">
               מאפיית "לחם טוב" הוקמה לפני ארבעים שנה על ידי סבא וסבתא כהן, שהביאו איתם מתכונים מסורתיים מהבית של פעם.
             </p>
-            <p className="mb-6 hebrew text-muted-foreground leading-relaxed">
+            <p className="mb-4 hebrew text-bakery-brown/80">
               היום אנו ממשיכים את המסורת המשפחתית ואופים מדי יום לחמים ומאפים טריים באהבה, תוך שימוש בחומרי הגלם האיכותיים ביותר ושמירה על המתכונים המקוריים.
             </p>
-            
-            <div className="grid grid-cols-2 gap-4">
-              <div className="text-center p-4 bg-background rounded-lg border border-border">
-                <h4 className="font-semibold text-foreground hebrew-title mb-1">40+</h4>
-                <p className="text-sm text-muted-foreground hebrew">שנות ניסיון</p>
-              </div>
-              <div className="text-center p-4 bg-background rounded-lg border border-border">
-                <h4 className="font-semibold text-foreground hebrew-title mb-1">100%</h4>
-                <p className="text-sm text-muted-foreground hebrew">טרי יומי</p>
-              </div>
-            </div>
+            <p className="hebrew text-bakery-brown/80">
+              כל מוצר שיוצא מהמאפייה שלנו נוצר בעבודת יד, באהבה ובמסירות, בדיוק כפי שלימדו אותנו סבא וסבתא.
+            </p>
           </div>
         </div>
       </div>
