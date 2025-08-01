@@ -5,7 +5,7 @@
 
 @layer base {
   :root {
-    --background: 40 45% 98%;
+    --background: 0 0% 100%;
     --foreground: 25 20% 20%;
 
     --card: 0 0% 100%;
@@ -15,25 +15,35 @@
     --popover-foreground: 25 20% 20%;
 
     --primary: 25 30% 35%;
-    --primary-foreground: 40 45% 98%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 30 25% 90%;
+    --secondary: 30 10% 96%;
     --secondary-foreground: 25 30% 35%;
 
-    --muted: 30 15% 90%;
+    --muted: 30 5% 95%;
     --muted-foreground: 30 10% 40%;
 
     --accent: 15 65% 50%;
-    --accent-foreground: 40 45% 98%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 40 45% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 30 25% 85%;
-    --input: 30 25% 85%;
+    --border: 30 10% 90%;
+    --input: 30 10% 90%;
     --ring: 25 20% 20%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+    
+    /* Custom bakery colors */
+    --bakery-primary: 25 30% 35%;
+    --bakery-secondary: 30 5% 95%;
+    --bakery-accent: 15 65% 50%;
+    --bakery-muted: 30 10% 90%;
+    
+    /* Card styling */
+    --card-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --card-shadow-hover: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
